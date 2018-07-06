@@ -5,7 +5,10 @@ While running `python setup.py develop` you get the error `Microsoft Visual C++ 
 **Solution** <br>
 Usually you would install Visual Studio 2017, but if you don't need the IDE (which I don't) follow these steps.
 Go to [https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017). Scroll down the page until you find a download for "Build Tools for Visual Studio 2017". ![Build Tools for Visual Studio 2017](https://i.imgur.com/ZueTtLm.png)
-Click the download the button for Build Tools for Visual Studio. The installer should download automatically. Once downloaded run the installer! Make sure that Visual Studio Build Tools 2017 is selected to be installed. Just click next and continue. It's a pretty large install - about 3GB, so give it time to download. 
+Click the download the button for Build Tools for Visual Studio. The installer should download automatically. Once downloaded run the installer! Make sure that Visual Studio Build Tools 2017 is selected to be installed.  
+On the installer you need to check the box next to _Visual C++ build tools_
+[Select checkbox next to Visual C++ build tools](https://i.imgur.com/aKHuZJ8.png)
+It's a pretty large install - about 2GB, so give it time to download. 
 
 Go to your Local disk (or C:/ drive) folder. Navigate to the _Program Files (x86)_. Inside _Program Files (x86)_ there should be a folder called _Microsoft Visual Studio_. Now go to the following directory: `2017/BuildTools/VC/Auxiliary/Build`. Your file explorer should look like this:
 ![File Explorer](https://i.imgur.com/aAEviN8.png) And there is your vcvarsall.bat file, make sure to copy the directory of the folder it's in. Now even though you have it's on your computer you still have to add the directory to the environment variable, PATH. To do this first, on your keyboard, press **Windows Key + pause** or go through Control Panel, and then System. This will take you to a page that shows basic information. Next click 'Advanced System Settings'
