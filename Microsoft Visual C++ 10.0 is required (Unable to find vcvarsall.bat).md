@@ -7,7 +7,7 @@ Usually you would install Visual Studio 2017, but if you don't need the IDE (whi
 Go to [https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017). Scroll down the page until you find a download for "Build Tools for Visual Studio 2017". ![Build Tools for Visual Studio 2017](https://i.imgur.com/ZueTtLm.png)
 Click the download the button for Build Tools for Visual Studio. The installer should download automatically. Once downloaded run the installer! Make sure that Visual Studio Build Tools 2017 is selected to be installed.  
 On the installer you need to check the box next to _Visual C++ build tools_
-[Select checkbox next to Visual C++ build tools](https://i.imgur.com/aKHuZJ8.png)
+![Select checkbox next to Visual C++ build tools](https://i.imgur.com/aKHuZJ8.png)
 It's a pretty large install - about 2GB, so give it time to download. 
 
 Go to your Local disk (or C:/ drive) folder. Navigate to the _Program Files (x86)_. Inside _Program Files (x86)_ there should be a folder called _Microsoft Visual Studio_. Now go to the following directory: `2017/BuildTools/VC/Auxiliary/Build`. Your file explorer should look like this:
