@@ -6,7 +6,8 @@ While running `python setup.py develop` you get the error `Microsoft Visual C++ 
 Usually you would install Visual Studio 2017, but if you don't need the IDE (which I don't) follow these steps.
 Go to [https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017). Scroll down the page until you find a download for "Build Tools for Visual Studio 2017". ![Build Tools for Visual Studio 2017](https://i.imgur.com/ZueTtLm.png)
 Click the download the button for Build Tools for Visual Studio. The installer should download automatically. Once downloaded run the installer! Make sure that Visual Studio Build Tools 2017 is selected to be installed.  
-On the installer you need to check the box next to _Visual C++ build tools_
+
+On the installer you need to __check__ the box next to _Visual C++ build tools_
 ![Select checkbox next to Visual C++ build tools](https://i.imgur.com/aKHuZJ8.png)
 __Uncheck__ the boxes, on the right hand side, _Windows 10 SDK_ and _Testing tools core features - Build tools_
 ![Uncheck boxes on the right hand side](https://i.imgur.com/k7AA96j.png)
