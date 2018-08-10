@@ -13,7 +13,7 @@ Thankfully a user by the name of fo40225 has compiled tensorflow without AVX.
 1. Check if you CPU **doesn't** support AVX instructions
 
 2. If it doesn't then download the tensorflow wheel without AVX instructions from here:
-[ https://github.com/fo40225/tensorflow-windows-wheel/tree/master/1.8.0/py36/CPU/sse2]( https://github.com/fo40225/tensorflow-windows-wheel/tree/master/1.8.0/py36/CPU/sse2) 
+[ https://github.com/fo40225/tensorflow-windows-wheel/tree/master/1.9.0/py36/CPU/sse2]( https://github.com/fo40225/tensorflow-windows-wheel/tree/master/1.9.0/py36/CPU/sse2) 
 
 3. Next uninstall tensorflow if you already have it through `pip uninstall tensorflow`
 
