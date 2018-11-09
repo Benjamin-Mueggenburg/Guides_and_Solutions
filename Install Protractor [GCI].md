@@ -28,8 +28,24 @@ Run `npm install -g protractor`
 
 Test the installation with `protractor --version`. If it returns with the version number, the installation was successful. 
 
-### Introduction to selenium
+### Introduction to Selenium
+For protractor to work, it needs a webdriver. A webdriver specifies the API that can be used to interact with browsers. This means human actions such as moving the mouse, pressing keys, clicking on buttons, can be automated and done so through code functions specified in API. 
 
+Protractor uses the [Selenium Remote Control (RC)](https://www.seleniumhq.org/projects/remote-control/) server, which is written in Java, that accepts commands sent over HTTP for the browser. 
+
+### Installation and Running of Selenium server
+#### Prerequisites
++ [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) - Run installer. Selenium Server requires it to be installed. Use `java -version` to test whether installation was successful.
+
+#### Installation of Selenium server
+Installing protractor, provides two command line tools - `protractor` and `webdriver-manager`. `webdriver-manager` is a helper tool that makes it easy to get an instance of the Selenium server running.
+
+Download necessary binaries:
+`webdriver-manager update`
+
+#### Run Selenium RC Server
+Start the Selenium  Server with:
+`webdriver-manager start`
 
 
 
