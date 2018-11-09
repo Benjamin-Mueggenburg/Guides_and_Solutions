@@ -33,7 +33,7 @@ For protractor to work, it needs a webdriver. A webdriver specifies the API that
 
 Protractor uses the [Selenium Remote Control (RC)](https://www.seleniumhq.org/projects/remote-control/) server, which is written in Java, that accepts commands sent over HTTP for the browser. 
 
-### Installation and Running of Selenium server
+### Installation and starting of Selenium server
 #### Prerequisites
 + [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) - Run installer. Selenium Server requires it to be installed. Use `java -version` to test whether installation was successful.
 
@@ -47,7 +47,53 @@ Download necessary binaries:
 Start the Selenium  Server with:
 `webdriver-manager start`
 
+Protractor will send requests to the Selenium server to control a local browser.
 
+Check the status of the local Selenium server at: `http://localhost:4444/wd/hub`
+
+### Writing tests (using Jasmine)
+Protractor, by default, uses [Jasmine](https://jasmine.github.io/) test framework for it's testing interface. Jasmine is  installed when you install protractor.
+
+#### Setup project for protractor tests
+Create a new directory called `tests`
+
+Inside that directory make two files: `conf.js` and `spec.js`
+
+
+`conf.js` should look like this
+```
+// conf.js
+exports.config = {
+  framework: 'jasmine',
+  seleniumAddress: 'http://localhost:4444/wd/hub',
+  specs: ['spec.js']
+}
+```
+
+#### Adding tests
+`spec.js` is where you write the actual e2e tests using Jasmine. An example e2e test can be found [here](https://www.protractortest.org/#/tutorial#step-1-interacting-with-elements)
+
+#### Running tests
+You can run the tests with:
+`protractor tests/config.js`
+
+It's best to add this command to `package.json`. 
+You can do so by going under `scripts` and adding the command to the variable `test`.<br/>
+Example:
+```
+"scripts": {
+    "test": "protractor tests/config.js"
+  },
+```
+
+This now means the tests can be ran using `npm test`
+
+
+### Conclusion
+Congratulations you have successfully install protractor and Selenium server. 
+
+Refer to the [Jasmine Documentation](https://jasmine.github.io/pages/docs_home.html) on how to write the tests 
+Also refer to the [Protractor guide](https://www.protractortest.org/#/locators) on how to use locators - used for finding DOM elements, and incorporate them with Jasmine
 
 
 
