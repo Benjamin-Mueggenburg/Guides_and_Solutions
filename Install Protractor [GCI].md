@@ -8,7 +8,30 @@ E2e testing is where the whole application is tested from start to finish. In we
 
 Not only does it test these subsystems; it also simulates real user scenearios, basically recreating how a real user would use the application. 
 
-Negatives of e2e testing is that writing these tests is time consuming, costing companies much more money than, say, unit tests. E2e tests are expected to change and are slow to run, which is why on the [Google Testing Blog](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html) it suggests 70% unit tests, 20% intergration tests and 10% e2e tests.
+Negatives of e2e testing is that writing these tests is time consuming - costing companies more money than, say, unit tests. Furthermore e2e tests are expected to change and are slow to run, which is why on the [Google Testing Blog](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html) it suggests 70% unit tests, 20% intergration tests and 10% e2e tests.
 
 ### Prerequisites
-To get up an running with e2e (end to end) testing using protractor
+To get up and running install:
++ [**NodeJS**](https://nodejs.org/en/download/) - download and run installer for your OS
+
+### Setup Nodejs project
+You may skip this step if you have already done so.
+
+Open your command prompt in a new directory created for your project:<br/>
+Run `npm init` and answer the prompts. This should create a `package.json` file.
+
+### Install Protractor
+Now for the interesting part - installing protractor.
+
+Using a command prompt in your project directory containing `package.json`<br/>
+Run `npm install -g protractor` 
+
+Test the installation with `protractor --version`. If it returns with the version number, the installation was successful. 
+
+### Introduction to selenium
+
+
+
+
+
+
